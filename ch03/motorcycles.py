@@ -66,3 +66,16 @@ print("\n" + too_expensive.title() + " is too expensive for me.")
 # motorcycles.remove("hyundai")
 
 # 만약 리스트에 같은 값이 여러 개 있다면 remove() 메서드는 첫 번째 항목만 제거. 값 전부 제거하고 싶다면 루프 사용해야 함. (ch07에서 배움)
+
+
+
+# index error
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+# print(motorcycle[3]) 하면 error 발생.
+# index error: 요청한 인덱스 못찾음
+# 마지막 요소 접근할 때 -1
+# 하지만 -1도 리스트가 비어있다면 error발생
+
+motorcycles = []
+# print(motorcycles[-1])

@@ -1,0 +1,22 @@
+togo = ['saudi', 'uk', 'gerogia', 'china', 'america']
+print(togo)
+
+print(sorted(togo))
+
+print(togo)
+
+print(sorted(togo, reverse=1))
+
+print(togo)
+
+togo.reverse()
+print(togo)
+
+togo.reverse()
+print(togo)
+
+togo.sort()
+print(togo)
+
+togo.sort(reverse=1)
+print(togo)
