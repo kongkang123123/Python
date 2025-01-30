@@ -7,5 +7,6 @@ terminologies = {
     }
 
 # 다음과 같이 동작한다. 잘 기억할 수 있도록
+# 딕셔너리의 키가 기준인듯
 for terminology in terminologies:
     print(terminology + ": " + terminologies[terminology])

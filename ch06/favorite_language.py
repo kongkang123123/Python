@@ -13,3 +13,20 @@ favorite_languages = {
 print("'sarah's favorite language is " + 
       favorite_languages['sarah'].title() +
       ".")
+
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is " +
+          language.title() + ".")
+# 기본적으로 딕셔너리에 루프 실행하면 키에만 적용
+
+## 내 친구일때만 출력되게 하기
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print(name.title())
+
+    if (name in friends):
+        print(" Hi " + name.title() + ". I see your favorite language is " +
+              favorite_languages[name].title() + "!")
+        
+if ('erin' not in favorite_languages.keys()):   # keys()나 values() 메서드로 값 접근 가능
+    print('Erin please take our poll')
