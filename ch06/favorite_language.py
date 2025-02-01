@@ -30,3 +30,21 @@ for name in favorite_languages.keys():
         
 if ('erin' not in favorite_languages.keys()):   # keys()나 values() 메서드로 값 접근 가능
     print('Erin please take our poll')
+
+### 딕셔너리 키에 순서대로 루프 실행하기 ###
+# 보통은 순서 신경 안쓰고 딕셔너리에 저장
+# sorted() 함수 사용!
+for name in sorted(favorite_languages.keys()):
+    print(name.title() + " thank you for taking the poll.")
+# favorite_languages.key()를 sorted() 메서드로 감쌌다는거 빼면 다른 for문이랑 동일
+print("\n")
+
+### 딕셔너리의 모든 '값'에 루프 실행하기 ###
+print("The following languages have been metnioned:")
+for language in favorite_languages.values():
+    print(language.title())
+
+# 중복 값 없이 출력하려면 set 사용
+print("The following languages have been metnioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
