@@ -66,3 +66,40 @@ print(alien_0)
 del alien_0['speed']
 
 print(alien_0)
+print("\n\n")
+
+### 중첩 ###
+# nesting(중첩): 딕셔너리를 리스트에 저장하거나 리스트를 딕셔너리 값으로 또는 딕셔너리를 다른 딕셔너리에 저장
+alien_0 = {'color' : 'green', 'points' : 5}
+alien_1 = {'color' : 'yellow', 'points' : 10}
+alien_2 = {'color' : 'red', 'points' : 15}
+
+aliens = [alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+
+print("\n\n")
+
+### 더 현실적인 예제 ###
+#외계인을 저장할 빈 리스트 만들기
+aliens = []
+
+# 녹색 외계인 30명을 만든다.
+for alien_number in range(30):
+    new_alien = {'color' : 'green', 'points' : 5, 'speed' : 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[0:3]:
+    if (alien['color'] == 'green'):
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+# 처음 5명을 출력한다.
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# 외계인이 몇 명 만들어졌는지 출력한다.
+print("Total number of aliens: " + str(len(aliens)))
