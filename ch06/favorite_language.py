@@ -48,3 +48,18 @@ for language in favorite_languages.values():
 print("The following languages have been metnioned:")
 for language in set(favorite_languages.values()):
     print(language.title())
+
+print("\n")
+### 딕셔너리 안에 리스트 넣기 ###
+favorite_languages = {
+    'jen' : ['python', 'ruby'],
+    'sarah' : ['c'],
+    'edward' : ['ruby', 'go'],
+    'phil' : ['python', 'haskell'],
+    }
+
+# item() 메서드 사용하면 key와 value 쌍 얻을 수 있음
+for name, languages in favorite_languages.items():
+    print('\n' + name.title() + "'s favorite languages are:")
+    for language in languages:
+        print("\t" + language.title())
