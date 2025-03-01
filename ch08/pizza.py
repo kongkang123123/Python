@@ -18,3 +18,16 @@ def make_pizza(*toppings):
 
 make_pizza('pepperoni')
 make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+print("\n\n")
+
+### 위치형 매개변수와 임의의 매개변수 함께 쓰기 ###
+def make_pizza(size, *toppings):
+    """만들려고 하는 피자를 요약합니다."""
+    print("\nMaking a " + str(size) + 
+          "-inch pizza with the following toppings: ")
+    for topping in toppings:
+        print("- "+ topping)
+
+make_pizza(16, 'pepperoni')
+make_pizza(12, "mushrooms", "green peppers", "extra cheese")
