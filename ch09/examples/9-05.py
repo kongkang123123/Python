@@ -18,7 +18,7 @@ class User():
     def greet_user(self):
         """방가인사"""
         print("Welcome, " + self.first_name.title())
-        print("I login in " + str(self.login_attempts) + " times.")
+        print("I login in " + str(self.login_attempts) + "  times.")
 
     def increment_login_attempts(self):
         """로그인 횟수 1씩 늘림"""
